@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Online Judge</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- [if IE]
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience and security.</p>
+  <![endif] -->
+  
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+   <div id="container">
+        <div id="header">
+            <div id="logo">
+                <img src="img/tile-wide.png" width="285" height="47" alt="">
+            </div>
+            <ul id="login-signup">
+                <li><a href="#">Login</a> | <a href="#">Signup</a></li>
+            </ul>
+        </div>
+        
+        <nav id="header-nav">
+            <ul>
+                <li>Contests</li>
+            </ul>
+        </nav>
+
+        <div id="credentials-box">
+            <div id="cred-header">Enter Your Credentials</div>
+            <div id="cred-body">
+                <form method="post" action="/">
+                    <div class="field">
+                        <div class="name">
+                            <label for="usernameOrEmail">Username/Email</label>
+                        </div>
+                        <div class="value">
+                            <input id="usernameOrEmail" name="usernameOrEmail" value="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="name">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="value">
+                            <input id="password" type="password" name="password" value="">
+                        </div>
+                    </div>
+                    <div class="button-field">
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            © 2020 by Unknown
+            <div>
+                <p>
+                    <script type="text/javascript">
+                        document.write (' <span id="date">', new Date().toDateString(), '<\/span>')
+                        if (document.getElementById) onload = function () {
+                            setInterval ("document.getElementById ('date').firstChild.data = new Date().toDateString()", 50)
+                        }
+                    </script>
+                     <script type="text/javascript">
+                        document.write ('<br> <span id="time">', new Date().toLocaleTimeString(), '<\/span>')
+                        if (document.getElementById) onload = function () {
+                            setInterval ("document.getElementById ('time').firstChild.data = new Date().toLocaleTimeString()", 50)
+                        }
+                    </script>
+                </p>
+            </div>
+        </footer>
+   </div>
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+</body>
+
+</html>
