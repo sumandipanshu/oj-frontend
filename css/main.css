@@ -254,18 +254,39 @@ textarea {
   }
 }
 
-#container{
-  margin: 0px 18%;
+html{
+  padding: 1rem;
+  min-width: 600px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
+
+body{
+  margin: 0;
+}
+
+
+/* #container{
+  margin: 0px 18%;
+} */
 #header{
-  padding: 50px 0;
+  padding: 10px 0 50px 0;
 }
 
 #logo{
   float: left;
 }
+#logo img{
+  width: 285px;
+  height: 47px;
+}
 
 #login-signup{
+  float: right;
+  list-style-type: none;
+}
+
+#loggedin{
   float: right;
   list-style-type: none;
 }
@@ -284,6 +305,15 @@ textarea {
 #header-nav ul li{
   display: inline;
   margin-left: 1rem;
+  font-weight: bold;
+}
+
+#header-nav p{
+  margin: 0 0;
+  text-align: center;
+  font-weight: 800;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #credentials-box{
@@ -291,7 +321,7 @@ textarea {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   width: 30rem;
-  margin: 5em auto;
+  margin: 5em auto 2em auto;
 }
 
 #cred-header{
@@ -316,6 +346,7 @@ textarea {
 .value{
   width: 15rem;
   float: left;
+  margin-bottom: 1rem;
 }
 
 .button-field{
@@ -323,9 +354,178 @@ textarea {
   margin-left: 12rem;
 }
 
+.forgotPassword{
+  text-align: right;
+  bottom: 0.75rem;
+  padding-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
 footer{
   margin-top:2rem;
   border-top: 1px solid rgb(185,185,185);
   padding-top: 0.5rem;
   text-align: center;
+}
+
+#middle{
+  margin-top: 1rem;
+  overflow: auto;
+}
+
+main{
+  /* margin-right: 21rem; */
+}
+
+#contest-database{
+  /* margin-right: 22rem; */
+}
+
+#contest-database #caption{
+  background-color: #e1e1e1;
+  font-size: 1rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding:0.25rem 0.5rem;
+}
+
+#contest-database table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#contest-database td, #contest-database th{
+  border: 1px solid #e1e1e1;
+  padding: 0.5em;
+  font-size: 0.9rem;
+}
+
+#contest-database tbody tr:nth-child(2n-1){
+  background-color: #f8f8f8;
+}
+
+#problem-database #caption{
+  background-color: #e1e1e1;
+  font-size: 0.9rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding:0.25rem 0.5rem;
+}
+
+#problem-database table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#problem-database td, #problem-database th{
+  border: 1px solid #e1e1e1;
+  padding: 0.5em;
+  font-size: 0.8rem;
+}
+
+#problem-database tbody tr:nth-child(2n-1){
+  background-color: #f8f8f8;
+}
+#problem-database tbody tr td:nth-child(1){
+  width: 17%;
+}
+#problem-database thead tr th:nth-child(1){
+  width: 17%;
+}
+
+#problem-database thead tr th:nth-child(2){
+  text-align: left;
+}
+#problem-database tbody tr td:nth-child(2){
+  text-align: left;
+}
+
+
+.submit-form{
+  margin-top: 1rem;
+}
+
+#submitpage-problemindex{
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+#submitpage-problemindex label{
+  display: inline-block;
+  width: 8rem;
+}
+#submitpage-languageindex{
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+#submitpage-languageindex label{
+  display: inline-block;
+  width: 8rem;
+}
+
+.submitpage-value{
+  display: inline-block;
+}
+
+.submitpage-value select{
+  width:20rem;
+}
+
+#submitpage-sourcefield{
+  margin-bottom: 1rem;
+}
+
+#submitpage-sourcefield textarea{
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#submissions-database #caption{
+  background-color: #e1e1e1;
+  font-size: 0.9rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding:0.25rem 0.5rem;
+}
+
+#submissions-database table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#submissions-database td, #submissions-database th{
+  border: 1px solid #e1e1e1;
+  padding: 0.5em;
+  font-size: 0.8rem;
+}
+
+#submissions-database tbody tr:nth-child(2n-1){
+  background-color: #f8f8f8;
+}
+#leaderboard-database #caption{
+  background-color: #e1e1e1;
+  font-size: 0.9rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding:0.25rem 0.5rem;
+}
+
+#leaderboard-database table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#leaderboard-database td, #leaderboard-database th{
+  border: 1px solid #e1e1e1;
+  padding: 0.5em;
+  font-size: 0.8rem;
+}
+
+#leaderboard-database tbody tr:nth-child(2n-1){
+  background-color: #f8f8f8;
 }
