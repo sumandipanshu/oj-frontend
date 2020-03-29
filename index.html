@@ -32,19 +32,19 @@
         </div>
         
         <nav id="header-nav">
-            <p>ONLINE JUDGE</p>
+            <p>WELCOME TO THE ONLINE JUDGE</p>
         </nav>
 
         <div id="credentials-box">
             <div id="cred-header">Enter Your Credentials</div>
             <div id="cred-body">
-                <form method="post" action="/">
+                <form name="login" method="post" action="/">
                     <div class="field">
                         <div class="name">
                             <label for="usernameOrEmail">Username/Email</label>
                         </div>
                         <div class="value">
-                            <input id="usernameOrEmail" name="usernameOrEmail" value="">
+                            <input id="usernameOrEmail" name="usernameOrEmail" value="" required>
                         </div>
                     </div>
                     <div class="field">
@@ -52,12 +52,12 @@
                             <label for="password">Password</label>
                         </div>
                         <div class="value">
-                            <input id="password" type="password" name="password" value="">
+                            <input id="password" type="password" name="password" title="Password must be 8 characters including 1 uppercase letter, 1 lowercase letter and numeric characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" value="" required>
                         </div>
                     </div>
                     <div class="button-field">
                         <!-- <input type="submit" value="Login"> -->
-                        <a href="contests.html"><button type="button">Login</button></a>
+                        <a href="contests.html"><button type="submit">Login</button></a>
                     </div>
                 </form>
                 <div class="forgotPassword">

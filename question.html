@@ -1,0 +1,212 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Online Judge</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- [if IE]
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience and security.</p>
+  <![endif] -->
+  
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <header id="header">
+        <div id="logo">
+            <img src="img/tile-wide.png" " alt="">
+        </div>
+        <ul id="login-signup">
+            <li>venomdipanshu | <a href="index.html">Logout</a></li>
+        </ul>
+    </header>
+    
+    <nav id="header-nav">
+        <ul>
+            <li><a href="contests.html">CONTESTS</a></li>
+            <li>|</li>
+            <li><a href="problems.html">PROBLEMS</a></li>
+            <li><a href="leaderboard.html">LEADERBOARD</a></li>
+            <li><a href="submission.html">SUBMISSIONS</a></li>
+            <li><a href="submit.html">SUBMIT</a></li>
+        </ul>
+    </nav>
+
+    <div id="middle">
+        <main>
+            <div class="problem-statement">
+                <div class="problem-statement">
+                    <div class="statement-header">
+                        <div class="qs-title">Divisibilty Problem</div>
+                        <div class="time-limit">
+                            <div class="property-title">
+                                time limit per test:
+                            </div>
+                            1 second
+                        </div>
+                        <div class="memory-limit">
+                            <div class="property-title">
+                                memory limit per test:
+                            </div>
+                            256 megabytes
+                        </div>
+                        <div class="input-file">
+                            <div class="property-title">
+                                input:
+                            </div>
+                            standard input
+                        </div>
+                        <div class="output-file">
+                            <div class="property-title">
+                                output:
+                            </div>
+                            standard output
+                        </div>
+                    </div>
+                    <div class="legend">
+                        <p>
+                           <p>You are given the array a consisting of n elements and the integer k≤n.</p>
+
+                            You want to obtain at least k
+                            equal elements in the array a
+
+                            . In one move, you can make one of the following two operations:
+
+                                Take one of the minimum elements of the array and increase its value by one (more formally, if the minimum value of a
+
+                            is mn then you choose such index i that ai=mn and set ai:=ai+1);
+                            take one of the maximum elements of the array and decrease its value by one (more formally, if the maximum value of a
+                            is mx then you choose such index i that ai=mx and set ai:=ai−1). 
+
+                            Your task is to calculate the minimum number of moves required to obtain at least k
+                            equal elements in the array.
+                        </p>
+                    </div>
+                    <p></p>
+                    <p></p>
+                    <div class="input-specification">
+                        <div class="section-title">Input</div>
+                        <p></p>
+                        <p>
+                            The first line of the input contains two integers n and k (1≤k≤n≤2⋅105) — the number of elements in a and the required number of equal elements.
+
+                            The second line of the input contains n integers a1,a2,…,an (1≤ai≤109), where ai is the i-th element of a.
+                        </p>
+                    </div>
+                    <p></p>
+                    <p></p>
+                    <div class="output-specification">
+                        <div class="section-title">Output</div>
+                        <p></p>
+                        <p>
+                            Print one integer — the minimum number of moves required to obtain at least k equal elements in the array.
+                        </p>
+                    </div>
+                    <p></p>
+                    <p></p>
+                    <div class="sample-tests">
+                        <div class="section-title">Examples</div>
+                        <p></p>
+                        <p></p>
+                        <div class="sample-test">
+                            <div class="input">
+                                <div class="title">Input</div>
+                                <pre class="content">6 5<br>1 2 2 1 2</pre>
+                            </div>
+                            <div class="output">
+                                <div class="title">Output</div>
+                                <pre class="content">5</pre>
+                            </div>
+                            <div class="input">
+                                <div class="title">Input</div>
+                                <pre class="content">6 5 1 2 2 1 2</pre>
+                            </div>
+                            <div class="output">
+                                <div class="title">Output</div>
+                                <pre class="content">5</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                    <p></p>
+                    <div class="note">
+                        <div class="section-title">Note</div>
+                        <p></p>
+                        <p>Consider the queries.
+
+                            The first query is [3,8,9,10]
+                            . The answer is "YES" as you can choose the path from the root 1 to the vertex u=10. Then vertices [3,9,10] belong to the path from 1 to 10 and the vertex 8 has distance 1 to the vertex 7
+                            
+                            which also belongs to this path.
+                            
+                            The second query is [2,4,6]
+                            . The answer is "YES" as you can choose the path to the vertex u=2. Then the vertex 4 has distance 1 to the vertex 1 which belongs to this path and the vertex 6 has distance 1 to the vertex 2
+                            
+                            which belongs to this path.
+                            
+                            The third query is [2,1,5]
+                            . The answer is "YES" as you can choose the path to the vertex u=5
+                            
+                            and all vertices of the query belong to this path.
+                            
+                            The fourth query is [4,8,2]
+                            . The answer is "YES" as you can choose the path to the vertex u=9 so vertices 2 and 4 both have distance 1 to the vertex 1 which belongs to this path and the vertex 8 has distance 1 to the vertex 7
+                            
+                            which belongs to this path.
+                            
+                            The fifth and the sixth queries both have answer "NO" because you cannot choose suitable vertex u
+                            .</p>
+                    </div>
+                </div>
+                <p></p>
+                <p></p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        Online Judge © 2020 by Unknown
+        <div>
+            <p>
+                <script type="text/javascript">
+                    document.write (' <span id="date">', new Date().toDateString(), '<\/span>')
+                    if (document.getElementById) onload = function () {
+                        setInterval ("document.getElementById ('date').firstChild.data = new Date().toDateString()", 50)
+                    }
+                </script>
+                    <script type="text/javascript">
+                    document.write ('<br> <span id="time">', new Date().toLocaleTimeString(), '<\/span>')
+                    if (document.getElementById) onload = function () {
+                        setInterval ("document.getElementById ('time').firstChild.data = new Date().toLocaleTimeString()", 50)
+                    }
+                </script>
+            </p>
+        </div>
+    </footer>
+
+
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+</body>
+
+</html>

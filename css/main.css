@@ -207,7 +207,7 @@ textarea {
   }
   a,
   a:visited {
-    text-decoration: underline;
+    text-decoration: none;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -265,7 +265,6 @@ body{
   margin: 0;
 }
 
-
 /* #container{
   margin: 0px 18%;
 } */
@@ -307,7 +306,10 @@ body{
   margin-left: 1rem;
   font-weight: bold;
 }
-
+#header-nav a,#header-nav a:visited{
+  color: inherit;
+  text-decoration: none;
+}
 #header-nav p{
   margin: 0 0;
   text-align: center;
@@ -528,4 +530,91 @@ main{
 
 #leaderboard-database tbody tr:nth-child(2n-1){
   background-color: #f8f8f8;
+}
+
+.problem-statement{
+  margin: 0.5em;
+  font-family: "Helvetica Neue",  Helvetica, Arial, sans-serif;
+  line-height: 1.2rem;
+  font-size: 1rem;
+}
+
+.problem-statement .statement-header{
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.problem-statement .statement-header .qs-title{
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 150%;
+  font-family: "Helvetica Neue",  Helvetica, Arial, sans-serif;
+}
+
+.problem-statement .time-limit, .problem-statement .memory-limit, .problem-statement .input-file, .problem-statement .output-file {
+  margin: 0 auto;
+}
+.problem-statement .property-title {
+  display: inline;
+  padding-right: 4px;
+}
+.problem-statement .legend {
+  margin-bottom: 1em;
+}
+.problem-statement p {
+  margin: 0 0 1em 0 !important;
+}
+.problem-statement ul {
+  list-style: disc;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
+
+.problem-statement ol {
+  list-style: decimal;
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
+
+.problem-statement li {
+  line-height: 1.5em;
+  margin-left: 3em;
+}
+
+.problem-statement .output-specification {
+  margin-bottom: 1em;
+}
+.problem-statement .sample-tests {
+  font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
+  font-size: 0.9em;
+}
+.problem-statement .section-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 115%;
+  font-weight: bold;
+}
+.problem-statement .sample-tests .input, .problem-statement .sample-tests .output {
+  border: 1px solid #888;
+}
+.problem-statement .sample-tests .output {
+  margin-bottom: 1em;
+  position: relative;
+  top: -1px;
+}
+.problem-statement .sample-tests .title {
+  font-size: 1.3em;
+  padding: 0.25em;
+  border-bottom: 1px solid #888;
+  text-transform: lowercase;
+  font-weight: bold;
+}
+.problem-statement .sample-tests pre {
+  line-height: 1.25em;
+  padding: 0.25em;
+  margin: 0;
+  background-color: #efefef;
 }
